@@ -28,6 +28,9 @@ public class Category extends AuditInfo {
 
 	private boolean isActive = false;
 	
+	private boolean isEmailActive = false;
+	private boolean isSMSActive = false;
+	
 	@OneToOne
 	private EmailAccount emailAccount;
 	
@@ -74,5 +77,19 @@ public class Category extends AuditInfo {
 		this.smsAccount = smsAccount;
 	}
 
-	
+	public boolean isEmailActive() {
+		return isEmailActive;
+	}
+
+	public boolean isSMSActive() {
+		return isSMSActive;
+	}
+
+	public void setEmailActive(boolean isEmailActive) {
+		this.isEmailActive = isEmailActive;
+	}
+
+	public void setSMSActive(boolean isSMSActive) {
+		this.isSMSActive = isSMSActive;
+	}
 }

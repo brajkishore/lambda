@@ -1,5 +1,7 @@
 package com.yroots.lambda.dao;
 
+import java.util.Optional;
+
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
@@ -11,4 +13,5 @@ import io.swagger.annotations.Api;
 @RepositoryRestResource(collectionResourceRel = "categories", path = "categories")
 public interface CategoryRepository extends PagingAndSortingRepository<Category,String> {
 
+	Optional<Category> findByName(String name);
 }
