@@ -32,16 +32,19 @@ public class CoreProcessor implements Runnable {
 		try {
 			if (StringUtils.hasText(request.getServiceName()) && StringUtils.hasText(request.getServiceName())) {
 				ServiceAccount serviceAccount = StaticContextProvider.getServiceAccountRepository()
-						.findById(request.getServiceName())
+						.findByName(request.getServiceName())
 						.orElseThrow(()->new ResourceNotFoundException("No service by name  " + request.getServiceName()));
 				
+				logger.debug("serviceAccount:"+serviceAccount.getName()+":"+serviceAccount.isActive());
 				if(!serviceAccount.isActive())
 					throw new NotActiveException(serviceAccount.getName()+" is inactive");
 				
 				Category category = StaticContextProvider.getCategoryRepository()
 						.findByName(request.getCategory())
 						.orElseThrow(()->new ResourceNotFoundException("No category by name  " + request.getCategory()));
-
+				
+				logger.debug("category:"+category.getName()+":"+category.isActive());
+				
 				if(!category.isActive())
 					throw new NotActiveException(category.getName()+" is inactive");
 								
@@ -49,17 +52,21 @@ public class CoreProcessor implements Runnable {
 				List<Subscription> subscriptions = StaticContextProvider.getSubscriptionRepository()
 						.findAllByTopicName(subTopic);
 
+				logger.debug("category:"+category.getName()+":isEmailActive:"+category.isEmailActive());
+				
 				if(category.isEmailActive()) {
 					//prep email and send to email sender
 					prepAndSendEmailer(serviceAccount,category,subscriptions);
-				}
-				if(category.isSMSActive()) {
+				}			
+				logger.debug("category:"+category.getName()+":isSMSActive:"+category.isSmsActive());
+				if(category.isSmsActive()) {
 					//prep sms and send to sms sender
 					prepAndSendSMSSener(serviceAccount,category,subscriptions);
 				}
 			}
 		} catch (Exception e) {
 			logger.error("Error "+ e.getMessage());
+			e.printStackTrace();
 		}
 	}
 

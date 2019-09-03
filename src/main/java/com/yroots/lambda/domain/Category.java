@@ -2,8 +2,10 @@ package com.yroots.lambda.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
@@ -25,16 +27,19 @@ public class Category extends AuditInfo {
 	@Column(length = 200)
 	@NotNull
 	private String name;
-
-	private boolean isActive = false;
 	
-	private boolean isEmailActive = false;
-	private boolean isSMSActive = false;
+	private boolean isActive=false;
 	
-	@OneToOne
+	
+	private boolean isEmailActive=false;
+	
+	
+	private boolean isSmsActive=false;
+	
+	@ManyToOne(fetch=FetchType.EAGER)
 	private EmailAccount emailAccount;
 	
-	@OneToOne
+	@ManyToOne(fetch=FetchType.EAGER)
 	private SMSAccount smsAccount;
 
 	public String getId() {
@@ -81,15 +86,15 @@ public class Category extends AuditInfo {
 		return isEmailActive;
 	}
 
-	public boolean isSMSActive() {
-		return isSMSActive;
+	public boolean isSmsActive() {
+		return isSmsActive;
 	}
 
 	public void setEmailActive(boolean isEmailActive) {
 		this.isEmailActive = isEmailActive;
 	}
 
-	public void setSMSActive(boolean isSMSActive) {
-		this.isSMSActive = isSMSActive;
+	public void setSmsActive(boolean isSmsActive) {
+		this.isSmsActive = isSmsActive;
 	}
 }

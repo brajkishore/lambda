@@ -1,0 +1,45 @@
+2019-09-04 01:46:11,412 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 104 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
+2019-09-04 01:46:11,412 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-09-04 01:46:11,412 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
+2019-09-04 01:46:16,666 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-09-04 01:46:20,038 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
+2019-09-04 01:46:20,039 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
+2019-09-04 01:46:20,040 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initializing RequestHandlerImpl
+2019-09-04 01:46:20,040 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initialized RequestHandlerImpl
+2019-09-04 01:46:21,576 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-04 01:46:22,223 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 11.216 seconds (JVM running for 12.012)
+2019-09-04 01:46:35,300 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
+2019-09-04 01:46:35,504 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
+2019-09-04 01:46:35,577 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:false
+2019-09-04 01:46:35,581 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:false
+2019-09-04 01:53:03,538 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 104 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
+2019-09-04 01:53:03,538 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-09-04 01:53:03,538 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
+2019-09-04 01:53:07,940 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
+2019-09-04 01:53:07,942 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
+2019-09-04 01:53:07,951 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initializing RequestHandlerImpl
+2019-09-04 01:53:07,955 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initialized RequestHandlerImpl
+2019-09-04 01:53:08,348 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-04 01:53:08,610 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.111 seconds (JVM running for 418.391)
+2019-09-04 01:55:18,298 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 104 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
+2019-09-04 01:55:18,298 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-09-04 01:55:18,298 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
+2019-09-04 01:55:23,586 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
+2019-09-04 01:55:23,588 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
+2019-09-04 01:55:23,607 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initializing RequestHandlerImpl
+2019-09-04 01:55:23,609 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initialized RequestHandlerImpl
+2019-09-04 01:55:24,166 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-04 01:55:24,378 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 6.114 seconds (JVM running for 554.161)
+2019-09-04 01:55:44,552 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 104 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
+2019-09-04 01:55:44,552 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-09-04 01:55:44,552 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
+2019-09-04 01:55:49,195 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
+2019-09-04 01:55:49,198 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
+2019-09-04 01:55:49,207 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initializing RequestHandlerImpl
+2019-09-04 01:55:49,211 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initialized RequestHandlerImpl
+2019-09-04 01:55:49,663 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-04 01:55:49,891 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.368 seconds (JVM running for 579.671)
+2019-09-04 02:02:43,570 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] serviceAccount:test1:true
+2019-09-04 02:02:43,746 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] category:test-cat2:true
+2019-09-04 02:02:43,806 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] category:test-cat2:isEmailActive:true
+2019-09-04 02:02:43,810 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] category:test-cat2:isSMSActive:true

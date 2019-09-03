@@ -15,6 +15,7 @@ import com.yroots.lambda.models.GenericResponse;
 import com.yroots.lambda.models.RequestPayload;
 import com.yroots.lambda.services.RequestHandler;
 
+
 @RestController
 public class MainController {
 
@@ -22,8 +23,8 @@ public class MainController {
 	@Qualifier("requestHandler")
 	private RequestHandler requestHandler;
 	
-	@PostMapping
-	private ResponseEntity<? extends GenericResponse> processNotification(
+	@PostMapping("/notify")
+	private ResponseEntity<? extends GenericResponse> notify(
 			@Valid @RequestBody RequestPayload request){
 		GenericResponse genericResponse=new GenericResponse(HttpStatus.CREATED.toString(), APIStatus.SUCCESS, "Processing request",null);		
 		requestHandler.handle(request);		
