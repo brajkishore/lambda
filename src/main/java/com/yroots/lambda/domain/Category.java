@@ -32,10 +32,9 @@ public class Category extends AuditInfo {
 	
 	
 	private boolean isEmailActive=false;
-	
-	
+		
 	private boolean isSmsActive=false;
-	
+		
 	@ManyToOne(fetch=FetchType.EAGER)
 	private EmailAccount emailAccount;
 	

@@ -7,6 +7,8 @@ import com.yroots.lambda.dao.SmsAccountRepository;
 import com.yroots.lambda.dao.SubscriptionRepository;
 import com.yroots.lambda.dao.UserRepository;
 
+import freemarker.template.Configuration;
+
 public class StaticContextProvider {
 
 	private static UserRepository userRepository;
@@ -15,6 +17,8 @@ public class StaticContextProvider {
 	private static SmsAccountRepository smsAccountRepository;
 	private static SubscriptionRepository subscriptionRepository;
 	private static CategoryRepository categoryRepository;
+	private static GlobalExecutorService executorService;
+	private static Configuration freemarkerConfig;
 	public static UserRepository getUserRepository() {
 		return userRepository;
 	}
@@ -50,5 +54,17 @@ public class StaticContextProvider {
 	}
 	public static void setCategoryRepository(CategoryRepository categoryRepository) {
 		StaticContextProvider.categoryRepository = categoryRepository;
+	}
+	public static GlobalExecutorService getExecutorService() {
+		return executorService;
+	}
+	public static void setExecutorService(GlobalExecutorService executorService) {
+		StaticContextProvider.executorService = executorService;
+	}
+	public static Configuration getFreemarkerConfig() {
+		return freemarkerConfig;
+	}
+	public static void setFreemarkerConfig(Configuration freemarkerConfig) {
+		StaticContextProvider.freemarkerConfig = freemarkerConfig;
 	}
 }

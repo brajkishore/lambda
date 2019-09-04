@@ -24,6 +24,25 @@ public class EmailAccount extends AuditInfo {
 	@NotNull
 	private String name;
 
+	private String encoding="UTF-8";
+	
+	@NotNull
+	private String host;
+	
+	@NotNull
+	private String username;
+	
+	@NotNull
+	private String password;
+	
+	@NotNull
+	private String protocol;
+		
+	private boolean testConn=false;
+	
+	private boolean smtpAuth=false;
+	private boolean isTlsEnabled=false;
+	
 	private boolean isActive = false;
 
 	public String getName() {
@@ -42,6 +61,76 @@ public class EmailAccount extends AuditInfo {
 		this.isActive = isActive;
 	}
 
-	
+	public String getId() {
+		return id;
+	}
+
+	public String getEncoding() {
+		return encoding;
+	}
+
+	public String getHost() {
+		return host;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public String getProtocol() {
+		return protocol;
+	}
+
+	public boolean isTestConn() {
+		return testConn;
+	}
+
+	public boolean isSmtpAuth() {
+		return smtpAuth;
+	}
+
+	public boolean isTlsEnabled() {
+		return isTlsEnabled;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public void setEncoding(String encoding) {
+		this.encoding = encoding;
+	}
+
+	public void setHost(String host) {
+		this.host = host;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setProtocol(String protocol) {
+		this.protocol = protocol;
+	}
+
+	public void setTestConn(boolean testConn) {
+		this.testConn = testConn;
+	}
+
+	public void setSmtpAuth(boolean smtpAuth) {
+		this.smtpAuth = smtpAuth;
+	}
+
+	public void setTlsEnabled(boolean isTlsEnabled) {
+		this.isTlsEnabled = isTlsEnabled;
+	}
 	
 }

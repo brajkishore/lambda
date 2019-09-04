@@ -13,7 +13,10 @@ import com.yroots.lambda.dao.ServiceAccountRepository;
 import com.yroots.lambda.dao.SmsAccountRepository;
 import com.yroots.lambda.dao.SubscriptionRepository;
 import com.yroots.lambda.dao.UserRepository;
+import com.yroots.lambda.services.GlobalExecutorService;
 import com.yroots.lambda.services.StaticContextProvider;
+
+import freemarker.template.Configuration;
 
 @Component
 public class StaticContextInializer {
@@ -38,7 +41,12 @@ public class StaticContextInializer {
 	@Autowired
 	private CategoryRepository categoryRepository;
 
-
+	@Autowired
+	private GlobalExecutorService executorService;
+	
+	@Autowired
+    private Configuration freemarkerConfig;
+	
 	@PostConstruct
 	public void init () {
 		logger.info("Initializing " + getClass().getSimpleName());
@@ -48,6 +56,8 @@ public class StaticContextInializer {
 		StaticContextProvider.setEmailAccountRepository(emailAccountRepository);
 		StaticContextProvider.setServiceAccountRepository(serviceAccountRepository);
 		StaticContextProvider.setUserRepository(userRepository);
+		StaticContextProvider.setExecutorService(executorService);
+		StaticContextProvider.setFreemarkerConfig(freemarkerConfig);
 		logger.info("Initialized " + getClass().getSimpleName());
 	}	
 }

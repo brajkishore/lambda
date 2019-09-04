@@ -24,6 +24,9 @@ public class SMSAccount extends AuditInfo {
 	@NotNull
 	private String name;
 
+	@NotNull
+	private String url;
+	
 	private boolean isActive = false;
 
 	public String getName() {
@@ -40,6 +43,22 @@ public class SMSAccount extends AuditInfo {
 
 	public void setActive(boolean isActive) {
 		this.isActive = isActive;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 
 }
