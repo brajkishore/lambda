@@ -15,7 +15,11 @@ public class RequestPayload {
 	@NotBlank
 	private String category;
 	private List<String> contacts;
-	private List<String> emails;
+	private String subject;
+	private String emailFromName;
+	private List<String> toEmails;
+	private List<String> ccEmails;
+	private List<String> bccEmails;
 	private String formattedText;
 	private List<KeyValue> data;
 
@@ -29,10 +33,6 @@ public class RequestPayload {
 
 	public List<String> getContacts() {
 		return contacts;
-	}
-
-	public List<String> getEmails() {
-		return emails;
 	}
 
 	public String getFormattedText() {
@@ -55,10 +55,6 @@ public class RequestPayload {
 		this.contacts = contacts;
 	}
 
-	public void setEmails(List<String> emails) {
-		this.emails = emails;
-	}
-
 	public void setFormattedText(String formattedText) {
 		this.formattedText = formattedText;
 	}
@@ -66,4 +62,46 @@ public class RequestPayload {
 	public void setData(List<KeyValue> data) {
 		this.data = data;
 	}
+
+	public List<String> getToEmails() {
+		return toEmails;
+	}
+
+	public List<String> getCcEmails() {
+		return ccEmails;
+	}
+
+	public List<String> getBccEmails() {
+		return bccEmails;
+	}
+
+	public void setToEmails(List<String> toEmails) {
+		this.toEmails = toEmails;
+	}
+
+	public void setCcEmails(List<String> ccEmails) {
+		this.ccEmails = ccEmails;
+	}
+
+	public void setBccEmails(List<String> bccEmails) {
+		this.bccEmails = bccEmails;
+	}
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public String getEmailFromName() {
+		return emailFromName;
+	}
+
+	public void setEmailFromName(String emailFromName) {
+		this.emailFromName = emailFromName;
+	}
+	
+	
 }

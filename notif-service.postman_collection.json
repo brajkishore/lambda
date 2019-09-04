@@ -1,0 +1,623 @@
+{
+	"info": {
+		"_postman_id": "811bc0de-2e1c-4ec1-a791-35c61109bddf",
+		"name": "notif-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8083/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8083/users/8a4be6346cd84b79016cd84b9a020000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"users",
+						"8a4be6346cd84b79016cd84b9a020000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"braj\",\n    \"lastName\": \"kishore\",\n    \"emails\": [\n        \"braj@invalid.in\"\n    ],\n    \"contacts\": [\n        \"9999467713\"\n    ],\n    \"active\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/users/8a4be6346cd84b79016cd84b9a020000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"users",
+						"8a4be6346cd84b79016cd84b9a020000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\":\"braj\",\n\t\"lastName\":\"kishore\",\n\t\"emails\":[\"braj@invalid.in\"],\n\t\"contacts\":[\"9999467713\"],\n\t\"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get service accounts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\":\"braj\",\n\t\"lastName\":\"kishore\",\n\t\"emails\":[\"braj@invalid.in\"],\n\t\"contacts\":[\"9999467713\"],\n\t\"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/service_accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"service_accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create service accounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"test1\",\n\t\"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/service_accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"service_accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"test-cat1\",\n\t\"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"test-cat1\",\n\t\"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a category",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"test-cat2\",\n    \"active\": true,\n    \"smsActive\": true,\n    \"emailActive\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/categories/402880e56cf8aa2a016cf8b003d30002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"categories",
+						"402880e56cf8aa2a016cf8b003d30002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "link category srv accnt",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/uri-list"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "http://localhost:8083/categories/402880e56cf8aa2a016cf8b003d30002"
+				},
+				"url": {
+					"raw": "http://localhost:8083/service_accounts/402880e56cf8aa2a016cf8afe3fa0001/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"service_accounts",
+						"402880e56cf8aa2a016cf8afe3fa0001",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "linkg email to category",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/uri-list"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "http://localhost:8083/email_accounts/402880e56cf8aa2a016cf8b1476a0003"
+				},
+				"url": {
+					"raw": "http://localhost:8083/categories/402880e56cf8aa2a016cf8b003d30002/emailAccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"categories",
+						"402880e56cf8aa2a016cf8b003d30002",
+						"emailAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "linkg sms to category",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/uri-list"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "http://localhost:8083/sms_accounts/402880e46cd94286016cd948c8cd0003"
+				},
+				"url": {
+					"raw": "http://localhost:8083/categories/402880e46cd94286016cd94324bf0001/smsAccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"categories",
+						"402880e46cd94286016cd94324bf0001",
+						"smsAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"test-cat\",\n\t\"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/service_accounts/test1/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"service_accounts",
+						"test1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a service account",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"test1\",\n\t\"categories\":[{\n\t\t\"name\":\"test-cat\",\n\t\t\"active\":true\n\t}],\n\t\"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/service_accounts/402880e46cd9320b016cd93260010000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"service_accounts",
+						"402880e46cd9320b016cd93260010000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"email-accnt1\",\n\t\"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/email_accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"email_accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create sms",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"sms-accnt1\",\n\t\"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/sms_accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"sms_accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get sms accounts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"sms-accnt1\",\n\t\"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/sms_accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"sms_accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get emails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"sms-accnt1\",\n\t\"active\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/sms_accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"sms_accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update email accnt",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"email-accnt1\",\n    \"formatedName\": \"Ava Stationery\",\n    \"host\": \"smtp.gmail.com\",\n    \"port\": 587,\n    \"username\": \"stationery@avasystemssignals.com\",\n    \"password\": \"Braj@12345\",\n    \"protocol\": \"smtp\",\n    \"testConn\": false,\n    \"smtpAuth\": true,\n    \"active\": true,\n    \"debugEnabled\": true,\n    \"tlsEnabled\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/email_accounts/402880e56cf8aa2a016cf8b1476a0003",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"email_accounts",
+						"402880e56cf8aa2a016cf8b1476a0003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update sms account",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"sms-accnt1\",\n\t\"url\": \"http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=<MOBILES>&authkey=287682A8G488yu5d4191b3&message=<MESSAGE>&country=91\",\n\t\"active\": true\n }"
+				},
+				"url": {
+					"raw": "http://localhost:8083/sms_accounts/402880e56cf8aa2a016cf8b1f8ed0004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"sms_accounts",
+						"402880e56cf8aa2a016cf8b1f8ed0004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notify email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"serviceName\":\"test1\",\n\t\"category\":\"test-cat2\",\n\t\"contacts\":[\"9999467713\"],\n\t\"toEmails\":[\"brajpromo@gmail.com\"],\n\t\"ccEmails\":[\"dev.skydew@gmail.com\"],\n\t\"subject\":\"Hello from Test\",\n\t\"data\":[\n\t\t{\n\t\t\t\"key\":\"firstName\",\n\t\t\t\"value\":\"Braj\"\n\t\t},\n\t\t{\n\t\t\t\"key\":\"from\",\n\t\t\t\"value\":\"Stationery Team\"\n\t\t}\n\t\t]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/notify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"notify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notify sms",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"serviceName\":\"test1\",\n\t\"category\":\"test-cat2\",\n\t\"contacts\":[\"9999467713\"]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/notify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"notify"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

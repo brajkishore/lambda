@@ -1,6 +1,7 @@
 package com.yroots.lambda.services;
 
 import java.io.NotActiveException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -61,7 +62,7 @@ public class CoreProcessor implements Runnable {
 				
 				if(category.isEmailActive()) {
 					//prep email and send to email sender
-					prepAndSendEmailer(serviceAccount,category,subscriptions);
+					prepAndSendEmailer(serviceAccount,category,subscriptions,request);
 				}			
 				logger.debug("category:"+category.getName()+":isSMSActive:"+category.isSmsActive());
 				if(category.isSmsActive()) {
@@ -118,8 +119,40 @@ public class CoreProcessor implements Runnable {
 	}
 
 	private void prepAndSendEmailer(ServiceAccount serviceAccount, Category category,
-			List<Subscription> subscriptions) {
-		// TODO Auto-generated method stub
+			List<Subscription> subscriptions, RequestPayload request2) {
 		
+		String msg="";
+		if(!StringUtils.hasText(request.getFormattedText()))
+			msg=serviceAccount.getName().toLowerCase()+"_"+category.getName().toLowerCase()+"_email.ftl";
+		
+		EmailProcessor task=EmailProcessor.newInstance(category.getEmailAccount(), request, msg, null);
+		StaticContextProvider.getExecutorService().submit(task);
+		
+		if(subscriptions!=null) {			
+			List<List<String>> allEmails=subscriptions.stream().map(v->{
+				try {
+					Optional<User> u=StaticContextProvider.getUserRepository().findById(v.getId());
+					if(u.isPresent() && u.get().getEmails()!=null)
+						return u.get().getEmails();
+				} catch (Exception e) {					
+				}		
+				return null;
+			}).filter(o->o!=null).collect(Collectors.toList());
+			
+			List<String> emails=new ArrayList<>();
+			if(allEmails!=null)
+				allEmails.forEach(l->{
+					emails.addAll(l);
+				});
+			
+			if(emails.size()>0) {
+				request.setToEmails(emails);
+				request.setCcEmails(null);
+				request.setBccEmails(null);
+				msg=serviceAccount.getName().toLowerCase()+"_"+category.getName().toLowerCase()+"_sub_email.ftl";			
+				task=EmailProcessor.newInstance(category.getEmailAccount(),request, msg, null);
+				StaticContextProvider.getExecutorService().submit(task);			
+			}
+		}
 	}
 }

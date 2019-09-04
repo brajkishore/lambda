@@ -24,14 +24,20 @@ public class EmailAccount extends AuditInfo {
 	@NotNull
 	private String name;
 
+	@NotNull
+	private String formatedName;
+
 	private String encoding="UTF-8";
 	
 	@NotNull
 	private String host;
 	
+	@NotNull	
+	private Integer port;
+	
 	@NotNull
 	private String username;
-	
+		
 	@NotNull
 	private String password;
 	
@@ -42,7 +48,7 @@ public class EmailAccount extends AuditInfo {
 	
 	private boolean smtpAuth=false;
 	private boolean isTlsEnabled=false;
-	
+	private boolean isDebugEnabled = false;
 	private boolean isActive = false;
 
 	public String getName() {
@@ -132,5 +138,30 @@ public class EmailAccount extends AuditInfo {
 	public void setTlsEnabled(boolean isTlsEnabled) {
 		this.isTlsEnabled = isTlsEnabled;
 	}
+
+	public Integer getPort() {
+		return port;
+	}
+
+	public void setPort(Integer port) {
+		this.port = port;
+	}
+
+	public boolean isDebugEnabled() {
+		return isDebugEnabled;
+	}
+
+	public void setDebugEnabled(boolean isDebugEnabled) {
+		this.isDebugEnabled = isDebugEnabled;
+	}
+
+	public String getFormatedName() {
+		return formatedName;
+	}
+
+	public void setFormatedName(String formatedName) {
+		this.formatedName = formatedName;
+	}
+	
 	
 }
