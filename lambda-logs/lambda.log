@@ -908,3 +908,45 @@ FTL stack trace ("~" means nesting-related):
 </html>
 2019-09-04 16:27:07,222 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-6] Contacts:9999467713:text:I am default message
 2019-09-04 16:27:07,226 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-6] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9999467713&authkey=266391ATvutVNz9vr5c815f4c&message=I am default message&country=91
+2019-09-04 16:40:37,364 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 6988 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
+2019-09-04 16:40:37,367 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-09-04 16:40:37,368 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
+2019-09-04 16:40:44,059 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-09-04 16:40:49,350 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
+2019-09-04 16:40:49,351 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
+2019-09-04 16:40:49,414 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
+2019-09-04 16:40:49,415 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
+2019-09-04 16:40:50,969 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-04 16:40:51,791 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 14.936 seconds (JVM running for 16.199)
+2019-09-04 16:44:54,531 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
+2019-09-04 16:44:54,736 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
+2019-09-04 16:44:54,809 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
+2019-09-04 16:44:54,811 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:true
+2019-09-04 16:44:54,836 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] Contacts:9971558118:text:I am default message
+2019-09-04 16:44:54,844 DEBUG com.yroots.lambda.services.EmailProcessor [pool-1-thread-2] Emails:text:<html>
+ 
+<head></head>
+ 
+<body>
+    <p>Dear Surender,</p>
+    <p>Sending Email using Spring 4 with <b>FreeMarker template !!!</b></p>
+    <p>Thanks</p> 
+    <p>Dummy Team</p>   
+</body>
+ 
+</html>
+2019-09-04 16:44:54,851 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9971558118&authkey=266391ATvutVNz9vr5c815f4c&message=I am default message&country=91
+2019-09-04 16:49:12,835 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 11908 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
+2019-09-04 16:49:12,837 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-09-04 16:49:12,837 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
+2019-09-04 16:49:17,915 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-09-04 16:49:22,229 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
+2019-09-04 16:49:22,230 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
+2019-09-04 16:49:22,290 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
+2019-09-04 16:49:22,291 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
+2019-09-04 16:49:23,830 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-04 16:49:24,690 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 12.251 seconds (JVM running for 13.032)
+2019-09-04 16:49:27,350 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
+2019-09-04 16:49:27,737 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
+2019-09-04 16:49:27,810 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
+2019-09-04 16:49:27,813 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:true
