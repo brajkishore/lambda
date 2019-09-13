@@ -1,7 +1,6 @@
 package com.yroots.lambda.services;
 
-import java.io.IOException;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Properties;
 
@@ -14,37 +13,29 @@ import org.slf4j.LoggerFactory;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
-import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 import org.springframework.util.StringUtils;
 
 import com.yroots.lambda.domain.EmailAccount;
-import com.yroots.lambda.models.RequestPayload;
-
-import freemarker.core.ParseException;
-import freemarker.template.MalformedTemplateNameException;
-import freemarker.template.Template;
-import freemarker.template.TemplateException;
-import freemarker.template.TemplateNotFoundException;
+import com.yroots.lambda.models.EmailPayload;
 
 public class EmailProcessor implements Runnable {
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
-
-	private WorkStatusListener listener;
-	private String message;
+	private String topic;
 	private EmailAccount account;
-	private RequestPayload request;
+	private EmailPayload payload;
+	private WorkStatusListener listener;
 
-	private EmailProcessor(EmailAccount account, RequestPayload request, String message, WorkStatusListener listener) {
+	private EmailProcessor(String topic, EmailAccount account, EmailPayload payload, WorkStatusListener listener) {
+		this.topic = topic;
 		this.account = account;
-		this.request = request;
+		this.payload = payload;
 		this.listener = listener;
-		this.message = message;
 	}
 
-	public static EmailProcessor newInstance(EmailAccount account, RequestPayload request, String message,
+	public static EmailProcessor newInstance(String topic, EmailAccount account, EmailPayload payload,
 			WorkStatusListener listener) {
-		return new EmailProcessor(account, request, message, listener);
+		return new EmailProcessor(topic, account, payload, listener);
 	}
 
 	private JavaMailSender getJavaMailSender(EmailAccount account) {
@@ -66,84 +57,77 @@ public class EmailProcessor implements Runnable {
 
 	@Override
 	public void run() {
-		if (StringUtils.hasText(request.getSubject()) && StringUtils.hasText(message) && request.getToEmails() != null
-				&& request.getToEmails().size() > 0) {
-			String msg = "";
-			if (message.endsWith(".ftl")) {
-				Template t;
-				try {
-					Map<String, Object> params = new HashMap<>();
-					if (request.getData() != null)
-						request.getData().forEach(d -> {
-							params.put(d.getKey(), d.getValue());
-						});
-
-					t = StaticContextProvider.getFreemarkerConfig().getTemplate(message);
-					msg = FreeMarkerTemplateUtils.processTemplateIntoString(t, params);
-				} catch (TemplateNotFoundException e) {
-					e.printStackTrace();
-				} catch (MalformedTemplateNameException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (ParseException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (TemplateException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			} else
-				msg = message;
-
-			logger.debug("Emails:text:" + msg);
-			if (StringUtils.hasText(msg)) {
-				JavaMailSender sender = getJavaMailSender(account);
-
-				MimeMessage mimeMessage = sender.createMimeMessage();
-				boolean success = false;
-				try {
-					MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true);
-					mimeMessageHelper.setSubject(request.getSubject());
-					if (StringUtils.hasText(request.getEmailFromName()))
-						mimeMessageHelper.setFrom(new InternetAddress(account.getUsername(), request.getEmailFromName()));
-					else
-						mimeMessageHelper.setFrom(new InternetAddress(account.getUsername(), account.getFormatedName()));
-
-					if (request.getToEmails() != null) {
-						for(String e:request.getToEmails())
-							mimeMessageHelper.addTo(e);
-					}					
-					if (request.getCcEmails() != null) {
-						for(String e:request.getCcEmails())
-							mimeMessageHelper.addCc(e);
-					}
-					
-					if (request.getBccEmails() != null) {
-						for(String e:request.getBccEmails())
-							mimeMessageHelper.addBcc(e);
-					}
-					
-					mimeMessageHelper.setText(msg, true);
-					sender.send(mimeMessageHelper.getMimeMessage());
-					success = true;
-				} catch (MessagingException e) {
-					e.printStackTrace();
-					success = false;
-				} catch (Exception e) {
-					e.printStackTrace();
-					success = false;
-				}
-
-				if (listener != null && success) {
-					listener.success("Success");
-				} else if (listener != null) {
-					listener.success("Email failed");
-				}
-			}
+		if (payload == null) {
+			logger.info("No Email payload");
+			return;
 		}
 
+		if (StringUtils.hasText(payload.getSubject()) && payload.getToEmails() != null
+				&& payload.getToEmails().size() > 0 && StringUtils.hasText(payload.getText())) {
+			JavaMailSender sender = getJavaMailSender(account);
+
+			MimeMessage mimeMessage = sender.createMimeMessage();
+			boolean success = false;
+			Throwable throwable = null;
+			try {
+				MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true);
+				mimeMessageHelper.setSubject(payload.getSubject());
+				if (StringUtils.hasText(payload.getEmailFromName()))
+					mimeMessageHelper.setFrom(new InternetAddress(account.getUsername(), payload.getEmailFromName()));
+				else
+					mimeMessageHelper.setFrom(new InternetAddress(account.getUsername(), account.getFormatedName()));
+
+				if (payload.getToEmails() != null) {
+					for (String e : payload.getToEmails())
+						mimeMessageHelper.addTo(e);
+				}
+				if (payload.getCcEmails() != null) {
+					for (String e : payload.getCcEmails())
+						mimeMessageHelper.addCc(e);
+				}
+
+				if (payload.getBccEmails() != null) {
+					for (String e : payload.getBccEmails())
+						mimeMessageHelper.addBcc(e);
+				}
+
+				mimeMessageHelper.setText(payload.getText(), true);
+				sender.send(mimeMessageHelper.getMimeMessage());
+				success = true;
+			} catch (MessagingException e) {
+				e.printStackTrace();
+				throwable = e;
+				success = false;
+			} catch (Exception e) {
+				e.printStackTrace();
+				throwable = e;
+				success = false;
+			}
+
+			Map<String, Object> st = new LinkedHashMap<>();
+			if (listener != null && success) {
+				st.put("status", "success");
+				st.put("msg", "");
+				st.put("topic", topic);
+				st.put("from", account.getName());
+				st.put("sub", payload.getSubject());
+				st.put("to", payload.getToEmails());
+				st.put("cc", payload.getCcEmails());
+				st.put("bcc", payload.getBccEmails());
+				st.put("text", payload.getText());
+				listener.success(st);
+			} else if (listener != null) {
+				st.put("status", "failed");
+				st.put("msg", throwable.getMessage());
+				st.put("topic", topic);
+				st.put("from", account.getName());
+				st.put("sub", payload.getSubject());
+				st.put("to", payload.getToEmails());
+				st.put("cc", payload.getCcEmails());
+				st.put("bcc", payload.getBccEmails());
+				st.put("text", payload.getText());
+				listener.fail(st);
+			}
+		}
 	}
 }

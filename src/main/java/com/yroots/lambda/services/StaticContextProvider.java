@@ -1,5 +1,6 @@
 package com.yroots.lambda.services;
 
+import com.yroots.lambda.configs.LoggerConfig;
 import com.yroots.lambda.dao.CategoryRepository;
 import com.yroots.lambda.dao.EmailAccountRepository;
 import com.yroots.lambda.dao.ServiceAccountRepository;
@@ -19,6 +20,7 @@ public class StaticContextProvider {
 	private static CategoryRepository categoryRepository;
 	private static GlobalExecutorService executorService;
 	private static Configuration freemarkerConfig;
+	private static LoggerConfig loggerConfig;
 	public static UserRepository getUserRepository() {
 		return userRepository;
 	}
@@ -66,5 +68,11 @@ public class StaticContextProvider {
 	}
 	public static void setFreemarkerConfig(Configuration freemarkerConfig) {
 		StaticContextProvider.freemarkerConfig = freemarkerConfig;
+	}
+	public static LoggerConfig getLoggerConfig() {
+		return loggerConfig;
+	}
+	public static void setLoggerConfig(LoggerConfig loggerConfig) {
+		StaticContextProvider.loggerConfig = loggerConfig;
 	}
 }

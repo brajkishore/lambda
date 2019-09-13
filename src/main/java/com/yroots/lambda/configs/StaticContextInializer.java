@@ -47,6 +47,9 @@ public class StaticContextInializer {
 	@Autowired
     private Configuration freemarkerConfig;
 	
+	@Autowired
+    private LoggerConfig loggerConfig;
+	
 	@PostConstruct
 	public void init () {
 		logger.info("Initializing " + getClass().getSimpleName());
@@ -58,6 +61,7 @@ public class StaticContextInializer {
 		StaticContextProvider.setUserRepository(userRepository);
 		StaticContextProvider.setExecutorService(executorService);
 		StaticContextProvider.setFreemarkerConfig(freemarkerConfig);
+		StaticContextProvider.setLoggerConfig(loggerConfig);
 		logger.info("Initialized " + getClass().getSimpleName());
 	}	
 }

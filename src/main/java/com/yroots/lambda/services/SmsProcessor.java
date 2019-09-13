@@ -1,86 +1,68 @@
 package com.yroots.lambda.services;
 
-import java.io.IOException;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.client.RestTemplate;
 
 import com.yroots.lambda.domain.SMSAccount;
-
-import freemarker.core.ParseException;
-import freemarker.template.MalformedTemplateNameException;
-import freemarker.template.Template;
-import freemarker.template.TemplateException;
-import freemarker.template.TemplateNotFoundException;
+import com.yroots.lambda.models.SmsPayload;
 
 public class SmsProcessor implements Runnable {
 	private Logger logger = LoggerFactory.getLogger(getClass());
 
-	private Map<String, Object> params;
-	private WorkStatusListener listener;
-	private String message;
+	private String topic;
 	private SMSAccount account;
-	private String contacts;
+	private SmsPayload payload;
+	private WorkStatusListener listener;
 
-	private SmsProcessor(SMSAccount account, String contacts, Map<String, Object> params, String message,
-			WorkStatusListener listener) {
+	private SmsProcessor(String topic, SMSAccount account, SmsPayload payload, WorkStatusListener listener) {
+		this.topic = topic;
 		this.account = account;
-		this.contacts = contacts;
-		this.params = params;
+		this.payload = payload;
 		this.listener = listener;
-		this.message = message;
 	}
 
-	public static SmsProcessor newInstance(SMSAccount account, String contacts, Map<String, Object> params,
-			String message, WorkStatusListener listener) {
-		return new SmsProcessor(account, contacts, params, message, listener);
+	public static SmsProcessor newInstance(String topic, SMSAccount account, SmsPayload payload,
+			WorkStatusListener listener) {
+		return new SmsProcessor(topic, account, payload, listener);
 	}
 
 	@Override
 	public void run() {
-		if (StringUtils.hasText(message)) {
-			String msg = "";
-			if (message.endsWith(".ftl")) {
-				Template t;
-				try {
-					t = StaticContextProvider.getFreemarkerConfig().getTemplate(message);
-					msg = FreeMarkerTemplateUtils.processTemplateIntoString(t, params);
-				} catch (TemplateNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (MalformedTemplateNameException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (ParseException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (TemplateException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			} else
-				msg = message;
-			logger.debug("Contacts:"+contacts+":text:"+msg);
-			if (StringUtils.hasText(msg) && StringUtils.hasText(contacts)) {
-				RestTemplate restTemplate = new RestTemplate();
-				String baseUrl = account.getUrl();
-				String url = baseUrl.replaceAll("<MOBILES>", contacts);
-				url = url.replaceAll("<MESSAGE>", msg);
-				logger.debug("SMS URL:" + url);
-				ResponseEntity<String> response = restTemplate.getForEntity(url.toString(), String.class);
-				if (listener != null && response.getStatusCodeValue() == 200) {
-					listener.success("Success");
-				} else if (listener != null) {
-					listener.success("failed with " + response.getStatusCodeValue());
-				}
+		if (payload == null) {
+			logger.info("No Email payload");
+			return;
+		}
+		if (StringUtils.hasText(payload.getText()) && payload.getContacts() != null
+				&& payload.getContacts().size() > 0) {
+			RestTemplate restTemplate = new RestTemplate();
+			String baseUrl = account.getUrl();
+			String url = baseUrl.replaceAll("<MOBILES>", String.join(",", payload.getContacts()));
+			url = url.replaceAll("<MESSAGE>", payload.getText());
+			logger.debug("SMS URL:" + url);
+			ResponseEntity<String> response = restTemplate.getForEntity(url.toString(), String.class);
+			Map<String, Object> st = new LinkedHashMap<>();
+			if (listener != null && response.getStatusCodeValue() == 200) {
+				st.put("status", "success");
+				st.put("msg", response.getBody());
+				st.put("topic", topic);
+				st.put("from", account.getName());
+				st.put("to", payload.getContacts());
+				st.put("text", payload.getText());
+				listener.success(st);
+			} else if (listener != null) {
+				st.put("status", "failed");
+				st.put("msg", response.getBody());
+				st.put("topic", topic);
+				st.put("from", account.getName());
+				st.put("to", payload.getContacts());
+				st.put("text", payload.getText());
+				listener.fail(st);
 			}
 		}
 	}

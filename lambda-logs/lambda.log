@@ -1,367 +1,7 @@
-2019-09-04 01:46:11,412 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 104 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 01:46:11,412 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 01:46:11,412 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 01:46:16,666 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 01:46:20,038 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 01:46:20,039 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 01:46:20,040 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initializing RequestHandlerImpl
-2019-09-04 01:46:20,040 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initialized RequestHandlerImpl
-2019-09-04 01:46:21,576 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 01:46:22,223 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 11.216 seconds (JVM running for 12.012)
-2019-09-04 01:46:35,300 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
-2019-09-04 01:46:35,504 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
-2019-09-04 01:46:35,577 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:false
-2019-09-04 01:46:35,581 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:false
-2019-09-04 01:53:03,538 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 104 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 01:53:03,538 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 01:53:03,538 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 01:53:07,940 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 01:53:07,942 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 01:53:07,951 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initializing RequestHandlerImpl
-2019-09-04 01:53:07,955 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initialized RequestHandlerImpl
-2019-09-04 01:53:08,348 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 01:53:08,610 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.111 seconds (JVM running for 418.391)
-2019-09-04 01:55:18,298 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 104 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 01:55:18,298 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 01:55:18,298 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 01:55:23,586 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 01:55:23,588 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 01:55:23,607 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initializing RequestHandlerImpl
-2019-09-04 01:55:23,609 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initialized RequestHandlerImpl
-2019-09-04 01:55:24,166 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 01:55:24,378 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 6.114 seconds (JVM running for 554.161)
-2019-09-04 01:55:44,552 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 104 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 01:55:44,552 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 01:55:44,552 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 01:55:49,195 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 01:55:49,198 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 01:55:49,207 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initializing RequestHandlerImpl
-2019-09-04 01:55:49,211 INFO com.yroots.lambda.services.RequestHandlerImpl [restartedMain] Initialized RequestHandlerImpl
-2019-09-04 01:55:49,663 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 01:55:49,891 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.368 seconds (JVM running for 579.671)
-2019-09-04 02:02:43,570 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] serviceAccount:test1:true
-2019-09-04 02:02:43,746 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] category:test-cat2:true
-2019-09-04 02:02:43,806 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 02:02:43,810 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 04:38:55,452 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 6712 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 04:38:55,454 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 04:38:55,455 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 04:39:00,806 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 04:39:05,412 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'freemarkerConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'template.path' in value "${template.path}"
-2019-09-04 04:39:05,733 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'freemarkerConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'template.path' in value "${template.path}"
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.yroots.lambda.LambdaApplication.main(LambdaApplication.java:12)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'template.path' in value "${template.path}"
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1188)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
-	... 22 common frames omitted
-2019-09-04 04:39:51,594 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 9540 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 04:39:51,599 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 04:39:51,600 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 04:39:58,061 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 04:40:01,663 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 04:40:01,666 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 04:40:01,667 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'staticContextInializer': Unsatisfied dependency expressed through field 'freemarkerConfig'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'freemarker.template.Configuration' available: expected single matching bean but found 2: getFreeMarkerConfiguration,freeMarkerConfiguration
-2019-09-04 04:40:01,999 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field freemarkerConfig in com.yroots.lambda.configs.StaticContextInializer required a single bean, but 2 were found:
-	- getFreeMarkerConfiguration: defined by method 'getFreeMarkerConfiguration' in class path resource [com/yroots/lambda/configs/FreemarkerConfig.class]
-	- freeMarkerConfiguration: defined by method 'freeMarkerConfiguration' in class path resource [org/springframework/boot/autoconfigure/freemarker/FreeMarkerServletWebConfiguration.class]
-
-
-Action:
-
-Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
-
-2019-09-04 04:41:20,876 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 11968 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 04:41:20,880 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 04:41:20,880 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 04:41:26,798 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 04:41:30,709 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 04:41:30,713 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 04:41:30,813 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 04:41:30,813 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 04:41:32,334 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 04:41:32,691 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-04 04:41:33,258 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 12.794 seconds (JVM running for 13.672)
-2019-09-04 04:45:15,109 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
-2019-09-04 04:45:15,282 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
-2019-09-04 04:45:15,341 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 04:45:15,343 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 04:45:15,344 ERROR com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] Error null
-2019-09-04 04:46:13,037 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 11968 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 04:46:13,037 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 04:46:13,037 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 04:46:17,449 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 04:46:17,451 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 04:46:17,460 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 04:46:17,460 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 04:46:18,014 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 04:46:18,118 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-04 04:46:18,290 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.291 seconds (JVM running for 298.702)
-2019-09-04 04:46:24,473 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] serviceAccount:test1:true
-2019-09-04 04:46:24,637 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:true
-2019-09-04 04:46:24,693 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 04:46:24,701 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 04:46:24,760 DEBUG com.yroots.lambda.services.SmsProcessor [pool-2-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=&authkey=287682A8G488yu5d4191b3&message=test1_test-cat2_sms.ftl&country=91
-2019-09-04 04:47:30,636 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 11968 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 04:47:30,636 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 04:47:30,636 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 04:47:35,957 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 04:47:35,961 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 04:47:35,985 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 04:47:35,988 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 04:47:36,630 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 04:47:36,830 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-04 04:47:36,978 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 6.375 seconds (JVM running for 377.392)
-2019-09-04 04:47:47,537 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] serviceAccount:test1:true
-2019-09-04 04:47:47,706 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] category:test-cat2:true
-2019-09-04 04:47:47,762 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 04:47:47,766 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 04:47:47,787 DEBUG com.yroots.lambda.services.SmsProcessor [pool-3-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=&authkey=287682A8G488yu5d4191b3&message=test1_test-cat2_sms.ftl&country=91
-2019-09-04 04:48:46,018 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 04:48:46,035 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 04:48:46,035 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 04:48:50,893 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 04:48:54,449 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 04:48:54,463 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 04:48:54,542 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 04:48:54,544 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 04:48:56,045 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 04:48:56,395 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-04 04:48:56,820 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 11.165 seconds (JVM running for 12.041)
-2019-09-04 04:49:02,117 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
-2019-09-04 04:49:02,302 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
-2019-09-04 04:49:02,369 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 04:49:02,373 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 04:49:02,428 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=&authkey=287682A8G488yu5d4191b3&message=test1_test-cat2_sms.ftl&country=91
-2019-09-04 04:50:29,412 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 04:50:29,412 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 04:50:29,412 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 04:50:33,754 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 04:50:33,754 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 04:50:33,758 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 04:50:33,758 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 04:50:34,155 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 04:50:34,271 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-04 04:50:34,408 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.026 seconds (JVM running for 109.629)
-2019-09-04 04:50:43,818 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] serviceAccount:test1:true
-2019-09-04 04:50:43,983 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:true
-2019-09-04 04:50:44,039 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 04:50:44,043 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 04:50:44,050 DEBUG com.yroots.lambda.services.SmsProcessor [pool-2-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=&authkey=287682A8G488yu5d4191b3&message=test1_test-cat2_sms.ftl&country=91
-2019-09-04 04:51:25,681 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 04:51:25,681 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 04:51:25,681 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 04:51:30,339 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 04:51:30,352 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 04:51:30,359 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 04:51:30,360 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 04:51:30,739 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 04:51:30,839 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-04 04:51:30,961 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.31 seconds (JVM running for 166.186)
-2019-09-04 04:51:38,715 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] serviceAccount:test1:true
-2019-09-04 04:51:38,896 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] category:test-cat2:true
-2019-09-04 04:51:38,956 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 04:51:38,956 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 04:51:38,966 DEBUG com.yroots.lambda.services.SmsProcessor [pool-3-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=&authkey=287682A8G488yu5d4191b3&message=test1_test-cat2_sms.ftl&country=91
-2019-09-04 04:52:14,741 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 04:52:14,741 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 04:52:14,741 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 04:52:18,905 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 04:52:18,908 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 04:52:18,918 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 04:52:18,918 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 04:52:19,405 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 04:52:19,529 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-04 04:52:19,697 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 4.998 seconds (JVM running for 214.918)
-2019-09-04 04:52:52,312 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] serviceAccount:test1:true
-2019-09-04 04:52:52,473 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] category:test-cat2:true
-2019-09-04 04:52:52,528 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 04:52:52,532 DEBUG com.yroots.lambda.services.CoreProcessor [pool-4-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 04:52:52,539 DEBUG com.yroots.lambda.services.SmsProcessor [pool-4-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=&authkey=287682A8G488yu5d4191b3&message=test1_test-cat2_sms.ftl&country=91
-2019-09-04 04:54:05,719 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 04:54:05,719 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 04:54:05,719 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 04:54:10,643 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 04:54:10,647 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 04:54:10,661 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 04:54:10,662 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 04:54:11,022 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 04:54:11,237 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.559 seconds (JVM running for 326.458)
-2019-09-04 04:54:17,632 DEBUG com.yroots.lambda.services.CoreProcessor [pool-5-thread-1] serviceAccount:test1:true
-2019-09-04 04:54:17,837 DEBUG com.yroots.lambda.services.CoreProcessor [pool-5-thread-1] category:test-cat2:true
-2019-09-04 04:54:17,909 DEBUG com.yroots.lambda.services.CoreProcessor [pool-5-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 04:54:17,913 DEBUG com.yroots.lambda.services.CoreProcessor [pool-5-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 04:54:17,936 DEBUG com.yroots.lambda.services.SmsProcessor [pool-5-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=&authkey=287682A8G488yu5d4191b3&message=test1_test-cat2_sms.ftl&country=91
-2019-09-04 04:55:10,386 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 04:55:10,386 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 04:55:10,386 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 04:55:14,621 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 04:55:14,631 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 04:55:14,632 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 04:55:14,632 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 04:55:15,005 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 04:55:15,237 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 4.884 seconds (JVM running for 390.461)
-2019-09-04 04:55:22,373 DEBUG com.yroots.lambda.services.CoreProcessor [pool-6-thread-1] serviceAccount:test1:true
-2019-09-04 04:55:22,534 DEBUG com.yroots.lambda.services.CoreProcessor [pool-6-thread-1] category:test-cat2:true
-2019-09-04 04:55:22,600 DEBUG com.yroots.lambda.services.CoreProcessor [pool-6-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 04:55:22,602 DEBUG com.yroots.lambda.services.CoreProcessor [pool-6-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 04:55:22,620 DEBUG com.yroots.lambda.services.SmsProcessor [pool-6-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=&authkey=287682A8G488yu5d4191b3&message=test1_test-cat2_sms.ftl&country=91
-2019-09-04 05:01:54,654 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 05:01:54,654 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 05:01:54,654 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 05:01:58,849 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 05:01:58,854 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 05:01:58,867 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 05:01:58,871 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 05:01:59,405 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 05:01:59,628 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.003 seconds (JVM running for 794.843)
-2019-09-04 05:02:06,690 DEBUG com.yroots.lambda.services.CoreProcessor [pool-7-thread-1] serviceAccount:test1:true
-2019-09-04 05:02:06,852 DEBUG com.yroots.lambda.services.CoreProcessor [pool-7-thread-1] category:test-cat2:true
-2019-09-04 05:02:06,903 DEBUG com.yroots.lambda.services.CoreProcessor [pool-7-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 05:02:06,903 DEBUG com.yroots.lambda.services.CoreProcessor [pool-7-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 05:02:06,911 DEBUG com.yroots.lambda.services.SmsProcessor [pool-7-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=&authkey=287682A8G488yu5d4191b3&message=test1_test-cat2_sms.ftl&country=91
-2019-09-04 08:39:34,584 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 08:39:34,584 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 08:39:34,584 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 08:39:38,950 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 08:39:38,955 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 08:39:38,960 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 08:39:38,964 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 08:39:39,449 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 08:39:39,827 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.281 seconds (JVM running for 13856.226)
-2019-09-04 08:39:48,166 DEBUG com.yroots.lambda.services.CoreProcessor [pool-8-thread-1] serviceAccount:test1:true
-2019-09-04 08:39:48,318 DEBUG com.yroots.lambda.services.CoreProcessor [pool-8-thread-1] category:test-cat2:true
-2019-09-04 08:39:48,370 DEBUG com.yroots.lambda.services.CoreProcessor [pool-8-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 08:39:48,370 DEBUG com.yroots.lambda.services.CoreProcessor [pool-8-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 08:39:48,418 DEBUG com.yroots.lambda.services.SmsProcessor [pool-8-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=&authkey=287682A8G488yu5d4191b3&message=I am default message&country=91
-2019-09-04 08:40:27,796 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 08:40:27,796 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 08:40:27,796 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 08:40:32,762 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 08:40:32,766 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 08:40:32,779 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 08:40:32,779 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 08:40:33,503 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 08:40:33,811 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 6.053 seconds (JVM running for 13910.214)
-2019-09-04 08:40:39,364 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 08:40:39,364 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 08:40:39,364 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 08:40:44,071 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 08:40:44,078 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 08:40:44,091 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 08:40:44,091 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 08:40:44,644 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 08:40:45,016 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.685 seconds (JVM running for 13921.417)
-2019-09-04 08:42:17,373 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 08:42:17,373 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 08:42:17,373 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 08:42:22,013 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 08:42:22,017 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 08:42:22,030 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 08:42:22,034 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 08:42:22,614 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 08:42:22,842 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.496 seconds (JVM running for 14019.244)
-2019-09-04 08:42:53,968 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 08:42:53,968 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 08:42:53,968 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 08:42:58,272 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 08:42:58,277 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 08:42:58,282 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 08:42:58,282 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 08:42:58,700 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 08:42:58,916 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 4.98 seconds (JVM running for 14055.319)
-2019-09-04 08:43:21,234 DEBUG com.yroots.lambda.services.CoreProcessor [pool-12-thread-1] serviceAccount:test1:true
-2019-09-04 08:43:21,450 DEBUG com.yroots.lambda.services.CoreProcessor [pool-12-thread-1] category:test-cat2:true
-2019-09-04 08:43:21,508 DEBUG com.yroots.lambda.services.CoreProcessor [pool-12-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 08:43:21,509 DEBUG com.yroots.lambda.services.CoreProcessor [pool-12-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 08:43:54,809 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 08:43:54,809 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 08:43:54,809 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 08:43:58,965 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 08:43:58,965 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 08:43:58,976 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 08:43:58,980 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 08:43:59,535 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 08:43:59,786 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 5.006 seconds (JVM running for 14116.189)
-2019-09-04 08:44:10,626 DEBUG com.yroots.lambda.services.CoreProcessor [pool-13-thread-1] serviceAccount:test1:true
-2019-09-04 08:44:10,782 DEBUG com.yroots.lambda.services.CoreProcessor [pool-13-thread-1] category:test-cat2:true
-2019-09-04 08:44:10,837 DEBUG com.yroots.lambda.services.CoreProcessor [pool-13-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 08:44:10,837 DEBUG com.yroots.lambda.services.CoreProcessor [pool-13-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 08:44:10,841 DEBUG com.yroots.lambda.services.SmsProcessor [pool-13-thread-2] Contacts::text:I am default message
-2019-09-04 08:45:00,986 DEBUG com.yroots.lambda.services.CoreProcessor [pool-13-thread-3] serviceAccount:test1:true
-2019-09-04 08:45:01,390 DEBUG com.yroots.lambda.services.CoreProcessor [pool-13-thread-3] category:test-cat2:true
-2019-09-04 08:45:01,446 DEBUG com.yroots.lambda.services.CoreProcessor [pool-13-thread-3] category:test-cat2:isEmailActive:true
-2019-09-04 08:45:01,450 DEBUG com.yroots.lambda.services.CoreProcessor [pool-13-thread-3] category:test-cat2:isSMSActive:true
-2019-09-04 08:45:01,458 DEBUG com.yroots.lambda.services.SmsProcessor [pool-13-thread-4] Contacts:9999467713:text:I am default message
-2019-09-04 08:45:01,466 DEBUG com.yroots.lambda.services.SmsProcessor [pool-13-thread-4] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9999467713&authkey=287682A8G488yu5d4191b3&message=test1_test-cat2_sms.ftl&country=91
-2019-09-04 08:45:26,078 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3840 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 08:45:26,078 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 08:45:26,078 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 08:45:30,119 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 08:45:30,122 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 08:45:30,136 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 08:45:30,136 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 08:45:30,611 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 08:45:30,828 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 4.776 seconds (JVM running for 14207.228)
-2019-09-04 08:48:05,541 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 11452 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 08:48:05,545 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 08:48:05,545 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 08:48:10,663 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 08:48:13,703 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 08:48:13,706 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 08:48:13,763 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 08:48:13,763 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 08:48:15,323 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 08:48:16,139 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 11.038 seconds (JVM running for 11.905)
-2019-09-04 08:48:32,936 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
-2019-09-04 08:48:33,121 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
-2019-09-04 08:48:33,179 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 08:48:33,183 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 08:48:33,248 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-2] Contacts:9999467713:text:I am default message
-2019-09-04 08:48:33,260 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9999467713&authkey=287682A8G488yu5d4191b3&message=I am default message&country=91
-2019-09-04 14:59:51,159 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 3176 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 14:59:51,186 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 14:59:51,186 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 15:00:18,357 ERROR com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Exception during pool initialization.
+2019-09-13 18:00:26,794 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 14308 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
+2019-09-13 18:00:26,798 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-09-13 18:00:26,802 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
+2019-09-13 18:00:54,093 ERROR com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Exception during pool initialization.
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -386,11 +26,11 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:73)
 	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:142)
 	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:113)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$f038d859.CGLIB$jpaVendorAdapter$6(<generated>)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$f038d859$$FastClassBySpringCGLIB$$278cac96.invoke(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c59d8094.CGLIB$jpaVendorAdapter$6(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c59d8094$$FastClassBySpringCGLIB$$4fd4e3f.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$f038d859.jpaVendorAdapter(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c59d8094.jpaVendorAdapter(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -477,7 +117,7 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 84 common frames omitted
-2019-09-04 15:00:18,385 WARN org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup [restartedMain] Unable to determine jdbc url from datasource
+2019-09-13 18:00:54,108 WARN org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup [restartedMain] Unable to determine jdbc url from datasource
 org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -486,11 +126,11 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:73)
 	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:142)
 	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:113)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$f038d859.CGLIB$jpaVendorAdapter$6(<generated>)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$f038d859$$FastClassBySpringCGLIB$$278cac96.invoke(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c59d8094.CGLIB$jpaVendorAdapter$6(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c59d8094$$FastClassBySpringCGLIB$$4fd4e3f.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$f038d859.jpaVendorAdapter(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c59d8094.jpaVendorAdapter(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -603,350 +243,218 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 84 common frames omitted
-2019-09-04 15:00:49,179 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 11536 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 15:00:49,182 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 15:00:49,183 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 15:00:56,113 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 15:01:10,606 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 15:01:10,607 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 15:01:10,871 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 15:01:10,872 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 15:01:12,798 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 15:01:14,064 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 25.268 seconds (JVM running for 26.164)
-2019-09-04 15:13:09,027 ERROR org.hibernate.internal.ExceptionMapperStandardImpl [http-nio-8083-exec-3] HHH000346: Error during managed flush [Validation failed for classes [com.yroots.lambda.domain.SMSAccount] during persist time for groups [javax.validation.groups.Default, ]
-List of constraint violations:[
-	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=url, rootBeanClass=class com.yroots.lambda.domain.SMSAccount, messageTemplate='{javax.validation.constraints.NotNull.message}'}
-]]
-2019-09-04 15:13:09,195 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8083-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction] with root cause
-javax.validation.ConstraintViolationException: Validation failed for classes [com.yroots.lambda.domain.SMSAccount] during persist time for groups [javax.validation.groups.Default, ]
-List of constraint violations:[
-	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=url, rootBeanClass=class com.yroots.lambda.domain.SMSAccount, messageTemplate='{javax.validation.constraints.NotNull.message}'}
-]
-	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:140)
-	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:80)
-	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:209)
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:83)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:478)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:356)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1454)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:511)
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3283)
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2479)
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:473)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:178)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:39)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:271)
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:98)
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:532)
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:746)
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:533)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:304)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy153.save(Unknown Source)
-	at org.springframework.data.repository.support.CrudRepositoryInvoker.invokeSave(CrudRepositoryInvoker.java:101)
-	at org.springframework.data.rest.core.support.UnwrappingRepositoryInvokerFactory$UnwrappingRepositoryInvoker.invokeSave(UnwrappingRepositoryInvokerFactory.java:176)
-	at org.springframework.data.rest.webmvc.RepositoryEntityController.createAndReturn(RepositoryEntityController.java:480)
-	at org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(RepositoryEntityController.java:371)
+2019-09-13 18:01:16,608 ERROR com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.yroots.lambda.LambdaApplication.main(LambdaApplication.java:12)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-2019-09-04 15:16:22,889 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
-2019-09-04 15:16:23,128 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
-2019-09-04 15:16:23,206 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 15:16:23,212 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 15:16:23,308 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] Contacts:9999467713:text:I am default message
-2019-09-04 15:16:23,320 ERROR freemarker.log._JULLoggerFactory$JULLogger [pool-1-thread-2] Error executing FreeMarker template
-freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
-==> firstName  [in template "test1_test-cat2_email.ftl" at line 6, column 15]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
-----
-Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
-----
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 54 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 57 common frames omitted
+2019-09-13 18:01:16,613 WARN org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator [restartedMain] HHH000342: Could not obtain connection to query metadata : Communications link failure
 
-----
-FTL stack trace ("~" means nesting-related):
-	- Failed at: ${firstName}  [in template "test1_test-cat2_email.ftl" at line 6, column 13]
-----
-	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
-	at freemarker.core.EvalUtil.coerceModelToTextualCommon(EvalUtil.java:467)
-	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:389)
-	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:358)
-	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
-	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
-	at freemarker.core.Environment.visit(Environment.java:330)
-	at freemarker.core.Environment.visit(Environment.java:336)
-	at freemarker.core.Environment.process(Environment.java:309)
-	at freemarker.template.Template.process(Template.java:384)
-	at org.springframework.ui.freemarker.FreeMarkerTemplateUtils.processTemplateIntoString(FreeMarkerTemplateUtils.java:50)
-	at com.yroots.lambda.services.EmailProcessor.run(EmailProcessor.java:81)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-2019-09-04 15:16:23,322 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9999467713&authkey=287682A8G488yu5d4191b3&message=I am default message&country=91
-2019-09-04 15:16:23,323 DEBUG com.yroots.lambda.services.EmailProcessor [pool-1-thread-2] Emails:text:
-2019-09-04 16:02:08,450 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 10752 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 16:02:08,452 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 16:02:08,453 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 16:02:13,806 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 16:02:17,813 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 16:02:17,814 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 16:02:17,868 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 16:02:17,868 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 16:02:19,294 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 16:02:20,037 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 12.0 seconds (JVM running for 12.782)
-2019-09-04 16:02:28,954 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
-2019-09-04 16:02:29,195 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
-2019-09-04 16:02:29,474 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 16:02:29,490 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 16:02:29,512 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] Contacts:9999467713:text:I am default message
-2019-09-04 16:02:29,512 DEBUG com.yroots.lambda.services.EmailProcessor [pool-1-thread-2] Emails:text:<html>
- 
-<head></head>
- 
-<body>
-    <p>Dear ,</p>
-    <p>Sending Email using Spring 4 with <b>FreeMarker template !!!</b></p>
-    <p>Thanks</p>    
-</body>
- 
-</html>
-2019-09-04 16:02:29,528 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9999467713&authkey=287682A8G488yu5d4191b3&message=I am default message&country=91
-2019-09-04 16:05:04,360 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 10752 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 16:05:04,360 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 16:05:04,360 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 16:05:10,496 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 16:05:10,509 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 16:05:10,510 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 16:05:10,510 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 16:05:10,858 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 16:05:11,074 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 6.761 seconds (JVM running for 183.83)
-2019-09-04 16:05:19,713 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] serviceAccount:test1:true
-2019-09-04 16:05:19,907 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:true
-2019-09-04 16:05:19,990 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 16:05:19,995 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 16:05:19,997 DEBUG com.yroots.lambda.services.EmailProcessor [pool-2-thread-2] Emails:text:<html>
- 
-<head></head>
- 
-<body>
-    <p>Dear ,</p>
-    <p>Sending Email using Spring 4 with <b>FreeMarker template !!!</b></p>
-    <p>Thanks</p>    
-</body>
- 
-</html>
-2019-09-04 16:05:19,998 DEBUG com.yroots.lambda.services.SmsProcessor [pool-2-thread-3] Contacts:9999467713:text:I am default message
-2019-09-04 16:05:20,001 DEBUG com.yroots.lambda.services.SmsProcessor [pool-2-thread-3] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9999467713&authkey=287682A8G488yu5d4191b3&message=I am default message&country=91
-2019-09-04 16:09:15,135 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 10752 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 16:09:15,135 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 16:09:15,136 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 16:09:20,957 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 16:09:20,958 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 16:09:20,965 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 16:09:20,966 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 16:09:21,354 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 16:09:21,571 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 6.463 seconds (JVM running for 434.313)
-2019-09-04 16:11:27,126 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 12024 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 16:11:27,129 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 16:11:27,129 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 16:11:32,641 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 16:11:36,597 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 16:11:36,598 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 16:11:36,657 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 16:11:36,658 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 16:11:38,149 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 16:11:38,891 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 12.166 seconds (JVM running for 12.947)
-2019-09-04 16:12:10,399 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
-2019-09-04 16:12:10,621 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
-2019-09-04 16:12:10,687 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 16:12:10,691 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 16:12:10,723 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] Contacts:9999467713:text:I am default message
-2019-09-04 16:12:10,730 DEBUG com.yroots.lambda.services.EmailProcessor [pool-1-thread-2] Emails:text:<html>
- 
-<head></head>
- 
-<body>
-    <p>Dear ,</p>
-    <p>Sending Email using Spring 4 with <b>FreeMarker template !!!</b></p>
-    <p>Thanks</p>    
-</body>
- 
-</html>
-2019-09-04 16:12:10,739 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9999467713&authkey=287682A8G488yu5d4191b3&message=I am default message&country=91
-2019-09-04 16:15:31,049 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 12024 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 16:15:31,049 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 16:15:31,049 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 16:15:37,312 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 16:15:37,312 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 16:15:37,318 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 16:15:37,319 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 16:15:37,702 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 16:15:37,928 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 6.912 seconds (JVM running for 251.968)
-2019-09-04 16:15:50,846 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] serviceAccount:test1:true
-2019-09-04 16:15:51,159 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:true
-2019-09-04 16:15:51,224 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 16:15:51,226 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 16:15:51,228 DEBUG com.yroots.lambda.services.EmailProcessor [pool-2-thread-2] Emails:text:<html>
- 
-<head></head>
- 
-<body>
-    <p>Dear ,</p>
-    <p>Sending Email using Spring 4 with <b>FreeMarker template !!!</b></p>
-    <p>Thanks</p>    
-</body>
- 
-</html>
-2019-09-04 16:15:51,229 DEBUG com.yroots.lambda.services.SmsProcessor [pool-2-thread-3] Contacts:9999467713:text:I am default message
-2019-09-04 16:15:51,232 DEBUG com.yroots.lambda.services.SmsProcessor [pool-2-thread-3] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9999467713&authkey=287682A8G488yu5d4191b3&message=I am default message&country=91
-2019-09-04 16:23:00,281 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 1612 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 16:23:00,284 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 16:23:00,285 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 16:23:07,181 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 16:23:13,588 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 16:23:13,589 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 16:23:13,641 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 16:23:13,642 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 16:23:15,085 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 16:23:15,832 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 16.014 seconds (JVM running for 16.768)
-2019-09-04 16:23:29,623 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
-2019-09-04 16:23:29,839 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
-2019-09-04 16:23:29,915 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 16:23:29,918 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 16:23:29,942 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] Contacts:9999467713:text:I am default message
-2019-09-04 16:23:29,947 DEBUG com.yroots.lambda.services.EmailProcessor [pool-1-thread-2] Emails:text:<html>
- 
-<head></head>
- 
-<body>
-    <p>Dear Braj,</p>
-    <p>Sending Email using Spring 4 with <b>FreeMarker template !!!</b></p>
-    <p>Thanks</p> 
-    <p>Stationery Team</p>   
-</body>
- 
-</html>
-2019-09-04 16:23:29,952 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9999467713&authkey=287682A8G488yu5d4191b3&message=I am default message&country=91
-2019-09-04 16:27:06,880 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-4] serviceAccount:test1:true
-2019-09-04 16:27:07,144 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-4] category:test-cat2:true
-2019-09-04 16:27:07,220 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-4] category:test-cat2:isEmailActive:true
-2019-09-04 16:27:07,221 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-4] category:test-cat2:isSMSActive:true
-2019-09-04 16:27:07,222 DEBUG com.yroots.lambda.services.EmailProcessor [pool-1-thread-5] Emails:text:<html>
- 
-<head></head>
- 
-<body>
-    <p>Dear Braj,</p>
-    <p>Sending Email using Spring 4 with <b>FreeMarker template !!!</b></p>
-    <p>Thanks</p> 
-    <p>Stationery Team</p>   
-</body>
- 
-</html>
-2019-09-04 16:27:07,222 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-6] Contacts:9999467713:text:I am default message
-2019-09-04 16:27:07,226 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-6] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9999467713&authkey=266391ATvutVNz9vr5c815f4c&message=I am default message&country=91
-2019-09-04 16:40:37,364 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 6988 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 16:40:37,367 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 16:40:37,368 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 16:40:44,059 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 16:40:49,350 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 16:40:49,351 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 16:40:49,414 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 16:40:49,415 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 16:40:50,969 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 16:40:51,791 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 14.936 seconds (JVM running for 16.199)
-2019-09-04 16:44:54,531 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
-2019-09-04 16:44:54,736 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
-2019-09-04 16:44:54,809 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 16:44:54,811 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:true
-2019-09-04 16:44:54,836 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] Contacts:9971558118:text:I am default message
-2019-09-04 16:44:54,844 DEBUG com.yroots.lambda.services.EmailProcessor [pool-1-thread-2] Emails:text:<html>
- 
-<head></head>
- 
-<body>
-    <p>Dear Surender,</p>
-    <p>Sending Email using Spring 4 with <b>FreeMarker template !!!</b></p>
-    <p>Thanks</p> 
-    <p>Dummy Team</p>   
-</body>
- 
-</html>
-2019-09-04 16:44:54,851 DEBUG com.yroots.lambda.services.SmsProcessor [pool-1-thread-3] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9971558118&authkey=266391ATvutVNz9vr5c815f4c&message=I am default message&country=91
-2019-09-04 16:49:12,835 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 11908 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
-2019-09-04 16:49:12,837 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-2019-09-04 16:49:12,837 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
-2019-09-04 16:49:17,915 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2019-09-04 16:49:22,229 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
-2019-09-04 16:49:22,230 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
-2019-09-04 16:49:22,290 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
-2019-09-04 16:49:22,291 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
-2019-09-04 16:49:23,830 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-04 16:49:24,690 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 12.251 seconds (JVM running for 13.032)
-2019-09-04 16:49:27,350 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
-2019-09-04 16:49:27,737 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
-2019-09-04 16:49:27,810 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
-2019-09-04 16:49:27,813 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isSMSActive:true
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-09-13 18:01:16,617 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2019-09-13 18:01:16,696 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.yroots.lambda.LambdaApplication.main(LambdaApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+	... 21 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 38 common frames omitted
+2019-09-13 18:06:54,396 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 5020 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
+2019-09-13 18:06:54,400 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-09-13 18:06:54,400 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
+2019-09-13 18:07:00,493 WARN org.hibernate.id.UUIDHexGenerator [restartedMain] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-09-13 18:07:04,985 INFO com.yroots.lambda.configs.LoggerConfig [restartedMain] LoggerConfig$$EnhancerBySpringCGLIB$$2337427c is initialized
+2019-09-13 18:07:05,642 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
+2019-09-13 18:07:05,642 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
+2019-09-13 18:07:05,856 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
+2019-09-13 18:07:05,858 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
+2019-09-13 18:07:07,760 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-13 18:07:08,708 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 14.705 seconds (JVM running for 15.549)
+2019-09-13 18:10:22,370 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] serviceAccount:test1:true
+2019-09-13 18:10:22,619 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:true
+2019-09-13 18:10:22,687 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] category:test-cat2:isEmailActive:true
+2019-09-13 18:10:22,691 DEBUG com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] Preparing to send  emails
+2019-09-13 18:10:22,695 ERROR com.yroots.lambda.services.CoreProcessor [pool-1-thread-1] Error Source must not be null
+2019-09-13 18:14:48,277 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 5020 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
+2019-09-13 18:14:48,277 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-09-13 18:14:48,281 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
+2019-09-13 18:14:55,290 INFO com.yroots.lambda.configs.LoggerConfig [restartedMain] LoggerConfig$$EnhancerBySpringCGLIB$$2337427c is initialized
+2019-09-13 18:14:55,528 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
+2019-09-13 18:14:55,528 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
+2019-09-13 18:14:55,534 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
+2019-09-13 18:14:55,538 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
+2019-09-13 18:14:55,931 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-13 18:14:56,216 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 7.996 seconds (JVM running for 483.061)
+2019-09-13 18:14:59,391 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] serviceAccount:test1:true
+2019-09-13 18:14:59,615 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:true
+2019-09-13 18:14:59,691 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:isEmailActive:true
+2019-09-13 18:14:59,691 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] Preparing to send  emails
+2019-09-13 18:14:59,703 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] category:test-cat2:isSMSActive:true
+2019-09-13 18:14:59,703 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-1] Preparing to send  sms
+2019-09-13 18:14:59,800 DEBUG com.yroots.lambda.services.SmsProcessor [pool-2-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=9999467713&authkey=266391ATvutVNz9vr5c815f4c&message=Hello subscriber&country=91
+2019-09-13 18:16:25,239 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-3] serviceAccount:test1:true
+2019-09-13 18:16:25,801 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-3] category:test-cat2:true
+2019-09-13 18:16:25,876 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-3] category:test-cat2:isEmailActive:true
+2019-09-13 18:16:25,876 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-3] Preparing to send  emails
+2019-09-13 18:16:25,880 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-3] category:test-cat2:isSMSActive:true
+2019-09-13 18:16:25,880 DEBUG com.yroots.lambda.services.CoreProcessor [pool-2-thread-3] Preparing to send  sms
+2019-09-13 18:16:25,892 DEBUG com.yroots.lambda.services.SmsProcessor [pool-2-thread-4] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=7683083670&authkey=266391ATvutVNz9vr5c815f4c&message=Hello subscriber&country=91
+2019-09-13 18:19:05,262 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LambdaApplication on WKWIN1289005 with PID 5020 (C:\Users\brakisho\Documents\java_workspace\lambda\target\classes started by brakisho in C:\Users\brakisho\Documents\java_workspace\lambda)
+2019-09-13 18:19:05,262 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-09-13 18:19:05,262 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: prod
+2019-09-13 18:19:11,485 INFO com.yroots.lambda.configs.LoggerConfig [restartedMain] LoggerConfig$$EnhancerBySpringCGLIB$$2337427c is initialized
+2019-09-13 18:19:11,681 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initializing GlobalExecutorService
+2019-09-13 18:19:11,682 INFO com.yroots.lambda.services.GlobalExecutorService [restartedMain] Initialized GlobalExecutorService
+2019-09-13 18:19:11,690 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initializing StaticContextInializer
+2019-09-13 18:19:11,690 INFO com.yroots.lambda.configs.StaticContextInializer [restartedMain] Initialized StaticContextInializer
+2019-09-13 18:19:12,163 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-13 18:19:12,396 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LambdaApplication in 7.174 seconds (JVM running for 739.245)
+2019-09-13 18:19:12,816 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] serviceAccount:test1:true
+2019-09-13 18:19:13,309 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] category:test-cat2:true
+2019-09-13 18:19:13,381 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] category:test-cat2:isEmailActive:true
+2019-09-13 18:19:13,383 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] Preparing to send  emails
+2019-09-13 18:19:13,389 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] category:test-cat2:isSMSActive:true
+2019-09-13 18:19:13,390 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-1] Preparing to send  sms
+2019-09-13 18:19:13,422 DEBUG com.yroots.lambda.services.SmsProcessor [pool-3-thread-2] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=7683083670&authkey=266391ATvutVNz9vr5c815f4c&message=I am default message&country=91
+2019-09-13 18:23:33,565 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-3] serviceAccount:test1:true
+2019-09-13 18:23:33,757 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-3] category:test-cat2:true
+2019-09-13 18:23:33,820 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-3] category:test-cat2:isEmailActive:true
+2019-09-13 18:23:33,820 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-3] Preparing to send  emails
+2019-09-13 18:23:33,833 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-3] category:test-cat2:isSMSActive:true
+2019-09-13 18:23:33,837 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-3] Preparing to send  sms
+2019-09-13 18:25:58,309 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-5] serviceAccount:test1:true
+2019-09-13 18:25:58,539 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-5] category:test-cat2:true
+2019-09-13 18:25:58,626 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-5] category:test-cat2:isEmailActive:true
+2019-09-13 18:25:58,627 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-5] Preparing to send  emails
+2019-09-13 18:25:58,628 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-5] category:test-cat2:isSMSActive:true
+2019-09-13 18:25:58,629 DEBUG com.yroots.lambda.services.CoreProcessor [pool-3-thread-5] Preparing to send  sms
+2019-09-13 18:25:58,641 DEBUG com.yroots.lambda.services.SmsProcessor [pool-3-thread-7] SMS URL:http://api.msg91.com/api/sendhttp.php?route=4&sender=AvaSys&mobiles=7683083670&authkey=266391ATvutVNz9vr5c815f4c&message=I am not from template&country=91

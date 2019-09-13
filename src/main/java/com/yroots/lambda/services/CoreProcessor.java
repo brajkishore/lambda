@@ -2,14 +2,13 @@ package com.yroots.lambda.services;
 
 import java.io.NotActiveException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.util.StringUtils;
 
@@ -17,7 +16,9 @@ import com.yroots.lambda.domain.Category;
 import com.yroots.lambda.domain.ServiceAccount;
 import com.yroots.lambda.domain.Subscription;
 import com.yroots.lambda.domain.User;
+import com.yroots.lambda.models.EmailPayload;
 import com.yroots.lambda.models.RequestPayload;
+import com.yroots.lambda.models.SmsPayload;
 
 public class CoreProcessor implements Runnable {
 
@@ -38,120 +39,132 @@ public class CoreProcessor implements Runnable {
 		try {
 			if (StringUtils.hasText(request.getServiceName()) && StringUtils.hasText(request.getServiceName())) {
 				ServiceAccount serviceAccount = StaticContextProvider.getServiceAccountRepository()
-						.findByName(request.getServiceName())
-						.orElseThrow(()->new ResourceNotFoundException("No service by name  " + request.getServiceName()));
-				
-				logger.debug("serviceAccount:"+serviceAccount.getName()+":"+serviceAccount.isActive());
-				if(!serviceAccount.isActive())
-					throw new NotActiveException(serviceAccount.getName()+" is inactive");
-				
-				Category category = StaticContextProvider.getCategoryRepository()
-						.findByName(request.getCategory())
-						.orElseThrow(()->new ResourceNotFoundException("No category by name  " + request.getCategory()));
-				
-				logger.debug("category:"+category.getName()+":"+category.isActive());
-				
-				if(!category.isActive())
-					throw new NotActiveException(category.getName()+" is inactive");
-								
-				String subTopic=serviceAccount.getName()+"#"+category.getName();
+						.findByName(request.getServiceName()).orElseThrow(
+								() -> new ResourceNotFoundException("No service by name  " + request.getServiceName()));
+
+				logger.debug("serviceAccount:" + serviceAccount.getName() + ":" + serviceAccount.isActive());
+				if (!serviceAccount.isActive())
+					throw new NotActiveException(serviceAccount.getName() + " is inactive");
+
+				Category category = StaticContextProvider.getCategoryRepository().findByName(request.getCategory())
+						.orElseThrow(
+								() -> new ResourceNotFoundException("No category by name  " + request.getCategory()));
+
+				logger.debug("category:" + category.getName() + ":" + category.isActive());
+
+				if (!category.isActive())
+					throw new NotActiveException(category.getName() + " is inactive");
+
+				String subTopic = serviceAccount.getName() + "#" + category.getName();
 				List<Subscription> subscriptions = StaticContextProvider.getSubscriptionRepository()
 						.findAllByTopicName(subTopic);
 
-				logger.debug("category:"+category.getName()+":isEmailActive:"+category.isEmailActive());
-				
-				if(category.isEmailActive()) {
-					//prep email and send to email sender
-					prepAndSendEmailer(serviceAccount,category,subscriptions,request);
-				}			
-				logger.debug("category:"+category.getName()+":isSMSActive:"+category.isSmsActive());
-				if(category.isSmsActive()) {
-					//prep sms and send to sms sender
-					prepAndSendSMSSener(serviceAccount,category,subscriptions,request);
+				logger.debug("category:" + category.getName() + ":isEmailActive:" + category.isEmailActive());
+
+				if (category.isEmailActive()) {
+					// prep email and send to email sender
+					prepAndSendEmailer(serviceAccount, category, subscriptions, request);
+				}
+				logger.debug("category:" + category.getName() + ":isSMSActive:" + category.isSmsActive());
+				if (category.isSmsActive()) {
+					// prep sms and send to sms sender
+					prepAndSendSMSSender(serviceAccount, category, subscriptions, request);
 				}
 			}
 		} catch (Exception e) {
-			logger.error("Error "+ e.getMessage());
+			logger.error("Error " + e.getMessage());
 			e.printStackTrace();
 		}
 	}
 
-	private void prepAndSendSMSSener(ServiceAccount serviceAccount, Category category,
+	private void prepAndSendSMSSender(ServiceAccount serviceAccount, Category category,
 			List<Subscription> subscriptions, RequestPayload request) {
-				
-		String msg="";
-		if(!StringUtils.hasText(request.getFormattedText()))
-			msg=serviceAccount.getName().toLowerCase()+"_"+category.getName().toLowerCase()+"_sms.ftl";			
-		String conts="";
-		if(request.getContacts()!=null)
-			conts=String.join(",",request.getContacts());
-		
-		Map<String,Object> params=new HashMap<>();
-		if(request.getData()!=null) {
-			request.getData().forEach(d->{
-				params.put(d.getKey(),d.getValue());
-			});
+
+		logger.debug("Preparing to send  sms");
+		ContentProvider contentProvider = ContentProvider.newInstance(request);
+
+		if (request.getSmsPayload() != null) {
+			String msg = contentProvider.getSmsFormattedText();
+			SmsPayload payload = new SmsPayload();
+			BeanUtils.copyProperties(request.getSmsPayload(), payload);
+			payload.setText(msg);
+			String topic = serviceAccount.getName() + "#" + category.getName();
+			SmsProcessor task = SmsProcessor.newInstance(topic, category.getSmsAccount(), payload,
+					new SmsStatusListener());
+			StaticContextProvider.getExecutorService().submit(task);
 		}
-		SmsProcessor task=SmsProcessor.newInstance(category.getSmsAccount(), conts, params, msg, null);
-		StaticContextProvider.getExecutorService().submit(task);
-		
-		if(subscriptions!=null) {
-			conts=null;
-			List<String> s=subscriptions.stream().map(v->{
+		// Process for subscribers
+		if (subscriptions != null) {
+			List<List<String>> allTos = subscriptions.stream().filter(e -> e.isSMSSub()).map(v -> {
 				try {
-					Optional<User> u=StaticContextProvider.getUserRepository().findById(v.getId());
-					if(u.isPresent() && u.get().getContacts()!=null)
-						return String.join(",", u.get().getContacts());
-				} catch (Exception e) {					
-				}		
+					Optional<User> u = StaticContextProvider.getUserRepository().findById(v.getId());
+					if (u.isPresent() && u.get().getContacts() != null)
+						return u.get().getContacts();
+				} catch (Exception e) {
+				}
 				return null;
-			}).filter(o->o!=null).collect(Collectors.toList());
-			
-			if(s!=null)
-				conts=String.join(",",s);
-			
-			if(StringUtils.hasText(conts)) {
-				msg=serviceAccount.getName().toLowerCase()+"_"+category.getName().toLowerCase()+"_sub_sms.ftl";			
-				task=SmsProcessor.newInstance(category.getSmsAccount(), conts, params, msg, null);
-				StaticContextProvider.getExecutorService().submit(task);			
+			}).filter(o -> o != null).collect(Collectors.toList());
+
+			List<String> tos = new ArrayList<>();
+			if (allTos != null)
+				allTos.forEach(l -> {
+					tos.addAll(l);
+				});
+
+			if (tos.size() > 0) {
+				SmsPayload payload = new SmsPayload();
+				String topic = serviceAccount.getName() + "#" + category.getName();
+				payload.setContacts(tos);
+				payload.setText(contentProvider.getSubsSmsFormattedText());
+				SmsProcessor task = SmsProcessor.newInstance(topic, category.getSmsAccount(), payload,
+						new SmsStatusListener());
+				StaticContextProvider.getExecutorService().submit(task);
 			}
 		}
 	}
 
-	private void prepAndSendEmailer(ServiceAccount serviceAccount, Category category,
-			List<Subscription> subscriptions, RequestPayload request2) {
-		
-		String msg="";
-		if(!StringUtils.hasText(request.getFormattedText()))
-			msg=serviceAccount.getName().toLowerCase()+"_"+category.getName().toLowerCase()+"_email.ftl";
-		
-		EmailProcessor task=EmailProcessor.newInstance(category.getEmailAccount(), request, msg, null);
-		StaticContextProvider.getExecutorService().submit(task);
-		
-		if(subscriptions!=null) {			
-			List<List<String>> allEmails=subscriptions.stream().map(v->{
+	private void prepAndSendEmailer(ServiceAccount serviceAccount, Category category, List<Subscription> subscriptions,
+			RequestPayload request) {
+
+		logger.debug("Preparing to send  emails");
+		ContentProvider contentProvider = ContentProvider.newInstance(request);
+		if (request.getEmailPayload() != null) {
+			String msg = contentProvider.getEmailFormattedText();
+			EmailPayload payload = new EmailPayload();
+			BeanUtils.copyProperties(request.getEmailPayload(), payload);
+			payload.setText(msg);
+			String topic = serviceAccount.getName() + "#" + category.getName();
+			EmailProcessor task = EmailProcessor.newInstance(topic, category.getEmailAccount(), payload,
+					new EmailStatusListener());
+			StaticContextProvider.getExecutorService().submit(task);
+		}
+
+		// Process for subscribers
+		if (subscriptions != null) {
+			List<List<String>> allTos = subscriptions.stream().filter(e -> e.isEmailSub()).map(v -> {
 				try {
-					Optional<User> u=StaticContextProvider.getUserRepository().findById(v.getId());
-					if(u.isPresent() && u.get().getEmails()!=null)
+					Optional<User> u = StaticContextProvider.getUserRepository().findById(v.getId());
+					if (u.isPresent() && u.get().getEmails() != null)
 						return u.get().getEmails();
-				} catch (Exception e) {					
-				}		
+				} catch (Exception e) {
+				}
 				return null;
-			}).filter(o->o!=null).collect(Collectors.toList());
-			
-			List<String> emails=new ArrayList<>();
-			if(allEmails!=null)
-				allEmails.forEach(l->{
-					emails.addAll(l);
+			}).filter(o -> o != null).collect(Collectors.toList());
+
+			List<String> tos = new ArrayList<>();
+			if (allTos != null)
+				allTos.forEach(l -> {
+					tos.addAll(l);
 				});
-			
-			if(emails.size()>0) {
-				request.setToEmails(emails);
-				request.setCcEmails(null);
-				request.setBccEmails(null);
-				msg=serviceAccount.getName().toLowerCase()+"_"+category.getName().toLowerCase()+"_sub_email.ftl";			
-				task=EmailProcessor.newInstance(category.getEmailAccount(),request, msg, null);
-				StaticContextProvider.getExecutorService().submit(task);			
+
+			if (tos.size() > 0) {
+				EmailPayload payload = new EmailPayload();
+				String topic = serviceAccount.getName() + "#" + category.getName();
+				payload.setToEmails(tos);
+				payload.setText(contentProvider.getSubsEmailFormattedText());
+				EmailProcessor task = EmailProcessor.newInstance(topic, category.getEmailAccount(), payload,
+						new EmailStatusListener());
+				StaticContextProvider.getExecutorService().submit(task);
 			}
 		}
 	}
