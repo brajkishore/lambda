@@ -22,6 +22,7 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yroots.lambda.configs.AppConstants;
+import com.yroots.lambda.configs.Util;
 import com.yroots.lambda.models.APIStatus;
 import com.yroots.lambda.models.Attachment;
 import com.yroots.lambda.models.GenericResponse;
@@ -56,10 +57,13 @@ public class MainController {
 		RequestPayload request=null;
 		try {
 			request = (new ObjectMapper()).readValue(requestStr, RequestPayload.class);			
-			if(files!=null && files.length>0) {
+			if(request!=null && 
+					request.getEmailPayload()!=null &&
+					files!=null && 
+					files.length>0) {
 				List<Attachment> attachments=new ArrayList<>();				
-				for(MultipartFile file:files) {
-					Map<String,String> savedInfo=fileStorageService.storeFile(file);
+				for(MultipartFile file:files) {					
+					Map<String,String> savedInfo=fileStorageService.storeFile(file,request.getServiceName(),request.getCategory());
 					attachments.add(Attachment.newInstance(savedInfo.get(AppConstants.FILENAME_KEY),savedInfo.get(AppConstants.LOCAL_FILEPATH_KEY)));					
 				}
 				if(attachments.size()>0 && 

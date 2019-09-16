@@ -9,7 +9,6 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,6 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.yroots.lambda.configs.AppConstants;
 import com.yroots.lambda.configs.FileStorageProperties;
+import com.yroots.lambda.configs.Util;
 import com.yroots.lambda.exceptions.FileStorageException;
 
 import javassist.NotFoundException;
@@ -43,7 +43,7 @@ public class FileStorageService {
 		}
 	}
 
-	public Map<String,String> storeFile(MultipartFile file) {
+	public Map<String,String> storeFile(MultipartFile file,String srvName,String catName) {
 		// Normalize file name
 		String fileName = StringUtils.cleanPath(file.getOriginalFilename());
 
@@ -52,11 +52,12 @@ public class FileStorageService {
 			if (fileName.contains("..")) {
 				throw new FileStorageException("Sorry! Filename contains invalid path sequence " + fileName);
 			}
-			fileName="T-"+System.nanoTime()+"-"+fileName;
+			fileName="T-"+System.nanoTime()+"-"+Util.getFormattedFileName(srvName, catName, fileName);
 			// Copy file to the target location (Replacing existing file with the same name)
 			Path targetLocation = this.fileStorageLocation.resolve(fileName);
+			
 			Files.copy(file.getInputStream(), targetLocation, StandardCopyOption.REPLACE_EXISTING);
-
+			
 			Map<String,String> map=new HashMap<String,String>();	
 			map.put(AppConstants.FILENAME_KEY, file.getOriginalFilename());
 			map.put(AppConstants.LOCAL_FILEPATH_KEY, targetLocation.toString());
@@ -66,6 +67,9 @@ public class FileStorageService {
 		}
 	}
 
+	private void createDir(String path) {
+		
+	}
 	public Resource loadFileAsResource(String fileName) throws Exception {
 		try {
 			if (StringUtils.hasText(fileName)) {

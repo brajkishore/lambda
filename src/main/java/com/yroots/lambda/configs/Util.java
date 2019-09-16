@@ -59,5 +59,13 @@ public class Util {
 		
 		return msg;
 	}
-	
+	public static String getFormattedFileName(String srvName,String catName,String fileName) {
+		StringBuilder sb=new StringBuilder();
+		sb.append(srvName.toLowerCase().trim());
+		sb.append("-_-");		
+		sb.append(catName.toUpperCase().trim());
+		sb.append("-_-");		
+		sb.append(fileName);
+		return sb.toString();
+	}
 }
