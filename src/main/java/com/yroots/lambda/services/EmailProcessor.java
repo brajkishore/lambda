@@ -10,12 +10,14 @@ import javax.mail.internet.MimeMessage;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.util.StringUtils;
 
 import com.yroots.lambda.domain.EmailAccount;
+import com.yroots.lambda.models.Attachment;
 import com.yroots.lambda.models.EmailPayload;
 
 public class EmailProcessor implements Runnable {
@@ -90,8 +92,16 @@ public class EmailProcessor implements Runnable {
 					for (String e : payload.getBccEmails())
 						mimeMessageHelper.addBcc(e);
 				}
-
 				mimeMessageHelper.setText(payload.getText(), true);
+
+				if (payload.getAttachments() != null && payload.getAttachments().size() > 0) {
+					System.out.println(payload.getAttachments());
+					for (Attachment attachment : payload.getAttachments()) {
+						FileSystemResource resource = new FileSystemResource(attachment.getFilePath());
+						mimeMessageHelper.addAttachment(attachment.getFileName(), resource);
+					}
+				}
+
 				sender.send(mimeMessageHelper.getMimeMessage());
 				success = true;
 			} catch (MessagingException e) {
@@ -110,22 +120,14 @@ public class EmailProcessor implements Runnable {
 				st.put("msg", "");
 				st.put("topic", topic);
 				st.put("from", account.getName());
-				st.put("sub", payload.getSubject());
-				st.put("to", payload.getToEmails());
-				st.put("cc", payload.getCcEmails());
-				st.put("bcc", payload.getBccEmails());
-				st.put("text", payload.getText());
+				st.put("payload", payload);
 				listener.success(st);
 			} else if (listener != null) {
 				st.put("status", "failed");
 				st.put("msg", throwable.getMessage());
 				st.put("topic", topic);
 				st.put("from", account.getName());
-				st.put("sub", payload.getSubject());
-				st.put("to", payload.getToEmails());
-				st.put("cc", payload.getCcEmails());
-				st.put("bcc", payload.getBccEmails());
-				st.put("text", payload.getText());
+				st.put("payload", payload);
 				listener.fail(st);
 			}
 		}

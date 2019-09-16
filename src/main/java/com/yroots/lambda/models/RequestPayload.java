@@ -39,4 +39,11 @@ public class RequestPayload {
 	public void setEmailPayload(EmailPayload emailPayload) {
 		this.emailPayload = emailPayload;
 	}
+	@Override
+	public String toString() {
+		return "RequestPayload [serviceName=" + serviceName + ", category=" + category + ", smsPayload=" + smsPayload
+				+ ", emailPayload=" + emailPayload + "]";
+	}
+	
+	
 }

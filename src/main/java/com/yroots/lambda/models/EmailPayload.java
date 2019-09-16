@@ -11,7 +11,7 @@ public class EmailPayload{
 	private String templateUrl;	
 	private String text;	
 	private List<KeyValue> data;
-	private List<String> attachments;
+	private List<Attachment> attachments;
 	public String getSubject() {
 		return subject;
 	}
@@ -36,7 +36,7 @@ public class EmailPayload{
 	public List<KeyValue> getData() {
 		return data;
 	}
-	public List<String> getAttachments() {
+	public List<Attachment> getAttachments() {
 		return attachments;
 	}
 	public void setSubject(String subject) {
@@ -63,7 +63,7 @@ public class EmailPayload{
 	public void setData(List<KeyValue> data) {
 		this.data = data;
 	}
-	public void setAttachments(List<String> attachments) {
+	public void setAttachments(List<Attachment> attachments) {
 		this.attachments = attachments;
 	}	
 }
