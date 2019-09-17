@@ -29,5 +29,5 @@ HELP.md
 .vscode/
 *log*
 *.log
-/lambda-logs/
+/lambda-logs/**
 /tmp/*

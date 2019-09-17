@@ -13,6 +13,7 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.yroots.lambda.configs.AppConstants;
 import com.yroots.lambda.configs.FileStorageProperties;
-import com.yroots.lambda.configs.Util;
 import com.yroots.lambda.exceptions.FileStorageException;
 
 import javassist.NotFoundException;
@@ -31,6 +31,9 @@ public class FileStorageService {
 	private static final Logger logger = LoggerFactory.getLogger(FileStorageService.class);
 
 	private final Path fileStorageLocation;
+	
+	@Value("${dir.invalid.chars}")
+	private String invalidChars;
 
 	@Autowired
 	public FileStorageService(FileStorageProperties fileStorageProperties) {
@@ -52,10 +55,13 @@ public class FileStorageService {
 			if (fileName.contains("..")) {
 				throw new FileStorageException("Sorry! Filename contains invalid path sequence " + fileName);
 			}
-			fileName="T-"+System.nanoTime()+"-"+Util.getFormattedFileName(srvName, catName, fileName);
+			fileName="T-"+System.nanoTime()+"-"+fileName;			
+			//create dir for service/cat
+			String srvDir=createDir(this.fileStorageLocation,srvName);
+			String catDir=createDir(this.fileStorageLocation.resolve(srvDir),catName);
+			fileName=srvDir+File.separator+catDir+File.separator+fileName;
 			// Copy file to the target location (Replacing existing file with the same name)
-			Path targetLocation = this.fileStorageLocation.resolve(fileName);
-			
+			Path targetLocation = this.fileStorageLocation.resolve(fileName);			
 			Files.copy(file.getInputStream(), targetLocation, StandardCopyOption.REPLACE_EXISTING);
 			
 			Map<String,String> map=new HashMap<String,String>();	
@@ -67,8 +73,12 @@ public class FileStorageService {
 		}
 	}
 
-	private void createDir(String path) {
-		
+	private String createDir(Path parentDir,String path) throws IOException {
+		path=path.toLowerCase().trim();
+		path = path.replaceAll(invalidChars, "_");
+		Path newDir=parentDir.resolve(path);
+		Files.createDirectories(newDir);	
+		return path;
 	}
 	public Resource loadFileAsResource(String fileName) throws Exception {
 		try {
